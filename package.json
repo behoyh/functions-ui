@@ -17,7 +17,7 @@
     "request": "^2.88.0",
     "resolve-url-loader": "^1.4.3",
     "url-loader": "^2.0.0",
-    "vue": "^2.1.6",
+    "vue": "^2.6.10",
     "vue-router": "^2.1.1"
   },
   "devDependencies": {
@@ -51,7 +51,7 @@
     "stylelint": "^7.1.0",
     "stylelint-loader": "^6.2.0",
     "vue-loader": "^10.0.2",
-    "vue-template-compiler": "^2.0.0",
+    "vue-template-compiler": "^2.6.10",
     "webpack": "^1.14.0"
   }
 }
