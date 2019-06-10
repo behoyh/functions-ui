@@ -40,7 +40,7 @@
     "modernizr-webpack-plugin": "^1.0.7",
     "normalize-css": "^2.3.1",
     "normalize.css": "^4.2.0",
-    "postcss-cssnext": "^2.7.0",
+    "postcss-cssnext": "^3.1.0",
     "postcss-font-magician": "^2.2.1",
     "postcss-fontpath": "^0.3.0",
     "postcss-hexrgba": "^0.2.0",
