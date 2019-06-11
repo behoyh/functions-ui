@@ -47,7 +47,7 @@
     "postcss-import": "^8.1.2",
     "postcss-loader": "^0.9.1",
     "postcss-url": "^8.0.0",
-    "style-loader": "^0.13.0",
+    "style-loader": "^0.23.1",
     "stylelint": "^7.1.0",
     "stylelint-loader": "^6.2.0",
     "vue-loader": "^10.0.2",
