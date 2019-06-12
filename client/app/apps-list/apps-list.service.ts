@@ -15,7 +15,17 @@ export class AppsListService {
 
     return this.http.get("http://localhost:4000/api/apps").pipe(
       map((obj:Response) => {
-        obj.json()
+        obj
+      }));
+  }
+  public addAppsList() : any {
+    const req = new HttpRequest('GET', "http://localhost:4000/api/apps", {
+      reportProgress: true
+    });
+
+    return this.http.get("http://localhost:4000/api/apps").pipe(
+      map((obj:Response) => {
+        obj
       }));
   }
 }
