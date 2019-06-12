@@ -1,5 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
+import { HttpModule, Http } from '@angular/http';
 import { AppComponent } from './app.component';
+import { doesNotThrow } from 'assert';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -7,6 +9,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      providers: [HttpModule]
     }).compileComponents();
   }));
 
@@ -28,4 +31,5 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to functions-ui!');
   });
+
 });
