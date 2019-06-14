@@ -2,6 +2,8 @@ var express = require('express');
 var path = require('path');
 var url = require('url');
 var bodyParser = require('body-parser');
+var cors = require('cors')
+
 
 var helpers = require('./helpers/app-helpers.js');
 
@@ -22,6 +24,8 @@ app.use(express.static(publicPath));
 app.use(bodyParser.json());
 
 app.use(require('./router.js'));
+
+app.use(cors({credentials: true, origin: true}))
 
 app.disable('etag');
 

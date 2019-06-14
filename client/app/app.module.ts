@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { AppsListComponent } from './apps-list/apps-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppsListService } from './apps-list/apps-list.service';
+import 'bootstrap';
 
 @NgModule({
   declarations: [

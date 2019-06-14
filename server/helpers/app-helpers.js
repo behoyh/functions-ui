@@ -41,7 +41,6 @@ exports.postApiEndpoint = function(req, path, params, postfields, successcb, err
 
 exports.execApiEndpoint = function(method, req, path, params, postfields, successcb, errorcb, headers) {
   if(headers == null) {
-      headers = {};
   }
   if (process.env.JWT_AUTH_KEY) {
     var token = jwt.sign(params, process.env.JWT_AUTH_KEY);

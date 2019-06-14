@@ -23,9 +23,13 @@
               "client/assets"
             ],
             "styles": [
-              "client/styles.css"
+              "client/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -72,7 +76,8 @@
             "tsConfig": "client/tsconfig.spec.json",
             "karmaConfig": "client/karma.conf.js",
             "styles": [
-              "client/styles.css"
+              "client/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [],
             "assets": [

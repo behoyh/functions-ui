@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppsListComponent } from './apps-list.component';
+import { AppsListService } from './apps-list.service';
+import { HttpClient, HttpHandler } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('AppsListComponent', () => {
   let component: AppsListComponent;
@@ -8,6 +11,8 @@ describe('AppsListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports:[HttpClientModule],
+      providers: [AppsListService],
       declarations: [ AppsListComponent ]
     })
     .compileComponents();

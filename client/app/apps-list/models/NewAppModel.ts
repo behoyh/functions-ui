@@ -1,6 +1,6 @@
-export class NewAppModel{
-    show: boolean;
-    edit: boolean;
-    app: {name: ""};
-    appConfig: [{key: "", value: ""}];
-  }
+export class NewAppModel {
+  public show: boolean;
+  public edit: boolean;
+  public app: { name: string };
+  public appConfig: [{ key: string, value: string }];
+}

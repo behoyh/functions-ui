@@ -9,6 +9,33 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <div>
+
+    <ul class="nav nav-sidebar" v-if="app">
+  
+      <li   >
+  
+        <router-link :to="'/app/' + encodeURIComponent(a.name)">
+  
+  
+          <span class="sr-only" v-if="app && app.name == a.name">(current)</span>
+  
+        </router-link>
+  
+      </li>
+  
+    </ul>
+  
+    <ol class="breadcrumb">
+  
+      <li class="active">Apps</li>
+  
+    </ol>
+  
+    <br>
+  
+    
+    <app-root></app-root>
+  </div>
 </body>
 </html>

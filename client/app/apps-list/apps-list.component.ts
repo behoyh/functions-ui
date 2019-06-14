@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AppsListService} from './apps-list.service';
+import { Observable } from 'rxjs';
 @Component({
   selector: 'apps-list',
   templateUrl: './apps-list.component.html',
@@ -7,16 +8,21 @@ import {AppsListService} from './apps-list.service';
 })
 export class AppsListComponent implements OnInit {
 
-  apps: [''];
+  apps: Response;
 
   constructor(private service: AppsListService) {
 
   }
 
   ngOnInit() {
-    debugger;
-    this.service.getAppsList().subscribe(x =>
-      this.apps = x
-    );
+    
+    this.service.getAppsList().subscribe(x => {
+      this.apps = x;
+    },
+    err=>{
+      debugger;
+      console.log(err);
+      alert(err);
+    });
   }
 }

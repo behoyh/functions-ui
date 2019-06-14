@@ -1,21 +1,40 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<apps-list></apps-list>
-<h2>Here are some links to help you start: </h2>
-<ul>
+<ul class="nav nav-sidebar">
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+    <a href="https://github.com/iron-io/functions#quickstart" target="_blank">
+      <i class="fa fa-bolt"></i> Quick Start
+    </a>
+  </li>
+  <li><a href="http://petstore.swagger.io/?url=https://raw.githubusercontent.com/iron-io/functions/master/docs/swagger.yml" target="_blank">
+    <i class="fa fa-file-text-o"></i> IronFunctions API</a>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+    <a href="https://github.com/iron-io/functions" target="_blank">
+      <i class="fa fa-github"></i> IronFunctions Github
+    </a>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+    <a href="https://github.com/iron-io/functions_ui" target="_blank">
+      <i class="fa fa-github"></i> IronFunctionsUI Github
+    </a>
+  </li>
+  <li>
+    <br>
+    <a href="http://get.iron.io/functions-slack" target="_blank">
+      Join our community:<br />
+      <br>
+      <img src="https://iron-functions-slack.herokuapp.com/badge.svg" alt="">
+    </a>
   </li>
 </ul>
 
+<h1 class="page-header">
+  Dashboard
+  <div class="pull-right">
+    <button class="btn btn-default">
+      <i class="fa fa-plus"></i>&nbsp;
+      Create App
+    </button>
+  </div>
+</h1>
+
+<apps-list></apps-list>
